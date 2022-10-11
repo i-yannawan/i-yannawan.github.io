@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Level-transducer</h1>
+    
+
+    <p class="name0"></p>
+    <p class="type0"></p>
+    <p class="unit0"></p>
+    <p class="rang0"></p>
+    <p class="plant-site0"></p>
+    <p class="value0"></p>
+    <br>
+    <p class="name1"></p>
+    <p class="type1"></p>
+    <p class="unit1"></p>
+    <p class="rang1"></p>
+    <p class="plant-site1"></p>
+    <p class="value1"></p>
+    <br>
+    <p class="name2"></p>
+    <p class="type2"></p>
+    <p class="unit2"></p>
+    <p class="rang2"></p>
+    <p class="plant-site2"></p>
+    <p class="value2"></p>
+    <br>
+    <button onclick="location.href='Home.html'">Go to home page</button>
+    
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("https://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=level-transducer")
+          .then((response) => response.json())
+          .then((data) => {
+                document.querySelector('.name0').innerHTML = `name: ${data[0].name}<br>`;
+                document.querySelector('.type0').innerHTML = `type: ${data[0].type}<br>`;
+                document.querySelector('.unit0').innerHTML = `unit: ${data[0].unit}<br>`;
+                document.querySelector('.rang0').innerHTML = `rang: ${data[0].range[0]} - ${data[0].range[1]}<br>`;
+                document.querySelector('.plant-site0').innerHTML = `plant-site: ${data[0]["plant-site"]}<br>` ;
+                document.querySelector('.value0').innerHTML = `value: ${data[0].value}<br>`;
+
+                document.querySelector('.name1').innerHTML = `name: ${data[1].name}<br>`;
+                document.querySelector('.type1').innerHTML = `type: ${data[1].type}<br>`;
+                document.querySelector('.unit1').innerHTML = `unit: ${data[1].unit}<br>`;
+                document.querySelector('.rang1').innerHTML = `rang: ${data[1].range[0]} - ${data[1].range[1]}<br>`;
+                document.querySelector('.plant-site1').innerHTML = `plant-site: ${data[1]["plant-site"]}<br>` ;
+                document.querySelector('.value1').innerHTML = `value: ${data[1].value}<br>`;
+
+                document.querySelector('.name2').innerHTML = `name: ${data[2].name}<br>`;
+                document.querySelector('.type2').innerHTML = `type: ${data[2].type}<br>`;
+                document.querySelector('.unit2').innerHTML = `unit: ${data[2].unit}<br>`;
+                document.querySelector('.rang2').innerHTML = `rang: ${data[2].range[0]} - ${data[2].range[1]}<br>`;
+                document.querySelector('.plant-site2').innerHTML = `plant-site: ${data[2]["plant-site"]}<br>` ;
+                document.querySelector('.value2').innerHTML = `value: ${data[2].value}<br>`;
+          });
+      });
+    </script>
+
+</body>
+</html>
