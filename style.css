@@ -1,0 +1,25 @@
+button{
+    background-color: black;
+    color: blanchedalmond;
+}
+body{
+    
+    background-image: url('2.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#bai{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+
+    font-family: 'Silkscreen', cursive;
+}
+#h0{
+  text-align: left;
+  padding: 40px;
+  font-size: 50px;
+  font-weight: bold;
+    
+}
