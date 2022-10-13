@@ -5,35 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500&display=swap" rel="stylesheet">
+    <title>Flow-transducer</title>
 </head>
 
-<body>
-    <h2>Flow-transducer</h2>
-    
+<body id='body'>
+    <div id="h4">Flow-transducer</div>
+    <style>
+      body{
+        font-family: 'Cuprum', sans-serif;
+        font-size: 23px;
+        /* font-weight: bold; */
+        display: flex;
+      } 
+
+    </style>
+
+ <div id="f0">
 <p class="name0"></p>
 <p class="type0"></p>
 <p class="unit0"></p>
 <p class="rang0"></p>
 <p class="plant-site0"></p>
 <p class="value0"></p>
-<br>
+ </div>
+<div id="f1">
 <p class="name1"></p>
 <p class="type1"></p>
 <p class="unit1"></p>
 <p class="rang1"></p>
 <p class="plant-site1"></p>
 <p class="value1"></p>
-<br>
+</div>
+
+<div id="f2">
 <p class="name2"></p>
 <p class="type2"></p>
 <p class="unit2"></p>
 <p class="rang2"></p>
 <p class="plant-site2"></p>
 <p class="value2"></p>
-<br>
-<button onclick="location.href='Home.html'">Go to home page</button>
-
+ </div>
+<br><br>
+<div id="f3">
+  <button type="button" class="btn btn-dark" onclick="location.href='Home.html'">Go to home page</button>
+</div>
 
  <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -63,6 +84,7 @@
       });
   });
 </script>
+
     
 </body>
 </html>
